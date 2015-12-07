@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block body%}
+<br>
+<div style='text-align:center' class='col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-lg-2 col-lg-offset-5'>
+<h2>Update Person</h2>
+<br>
+<form action='' method='POST'>
+    {%csrf_token%}
+    {{form.as_p}}
+    <a href='#'><button style='background:#D9F2FA; border:0px' type='submit'>Update</button>
+</form>
+</div>
+{%endblock body%}

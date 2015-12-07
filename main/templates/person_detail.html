@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block body%}
+<div style='text-align:center'>
+<br>
+<h3>
+First name: <b>{{object.firstname}}</b><br>
+Last name: <b>{{object.lastname}}</b><br>
+Date of birth: <b>{{object.month_of_birth}}/{{object.day_of_birth}}/{{object.year_of_birth}}</b><br>
+Zip-code: <b>{{object.zip_code}}</b><br>
+</h3>
+<br>
+<a href='/person_update/{{person.pk}}'><button style='background:#D9F2FA'>Update <i class="fa fa-pencil"></i></button></a> &nbsp
+<a href='/person_delete/{{person.pk}}'><button style='background:#D9F2FA'>Remove <i class="fa fa-trash"></i></button></a>
+</div>
+
+{%endblock body %}

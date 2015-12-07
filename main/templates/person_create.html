@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block body%}
+<br>
+<div style='text-align:center' class='col-xs-6 col-xs-offset-3'>
+<h2>Create New Person</h2>
+<br>
+<form action='' method='POST'>
+    {%csrf_token%}
+    {{form.as_p}}
+    <a href='#'><button style='background:#D9F2FA; border:0px' type='submit'>Create</button></a>
+</form>
+</div>
+{%endblock body%}

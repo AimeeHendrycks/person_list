@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block body%}
+<br>
+<div style='text-align:center'>
+<h2>Remove Person</h2>
+<br>
+<h3>You are about to remove {{object.firstname}} {{object.lastname}}</h3>
+<br>    
+    <form action='' method='POST'>
+    {%csrf_token%}
+        <a href='#'><button style='background:#D9F2FA; border:0px' type='submit'>Remove</button></a>
+    </form>
+    </div>
+{%endblock body%}
