@@ -24,7 +24,7 @@ class APIPersonDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class PersonList(ListView):
     template_name = 'person_list.html'
-    paginate_by =20
+    paginate_by =15
     def get_queryset(self):
         if 'search' in self.request.GET:
             object_list = Person.objects.filter(lastname__istartswith=self.request.GET['search'])
